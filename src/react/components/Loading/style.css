@@ -1,0 +1,33 @@
+#loading_container {
+    margin: 0 auto;
+}
+
+#loading_container strong{
+    display: block;
+    margin: auto;
+    margin-top: .5rem;
+}
+
+#loading_container .bar{
+    display: flex;
+    width: var(--w);
+    min-width: 5rem;
+}
+
+#loading_container .bar .ball{
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    min-height: 1rem;
+    height: var(100%/2);
+    border-radius: 50%;
+    background-color: black;
+    animation: m1 2s infinite
+}
+
+@keyframes m1 {
+    0%   {transform: translateX(0) scale(1); opacity: 1;}
+    25%  {transform: translateX(calc(var(--w)/2 * -1)) scale(.3); opacity: 0;}
+    50%  {transform: translateX(0) scale(1); opacity: 1;}
+    75%  {transform: translateX(calc(var(--w)/2)) scale(.3); opacity: 0;}
+    100% {transform: translateX(0) scale(1); opacity: 1;}
+}

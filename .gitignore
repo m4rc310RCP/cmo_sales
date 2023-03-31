@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output
+dist/
+out/
+build/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Other
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
